@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": ["ES2021", "DOM"],
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["cypress"],
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["cypress/pages/*"]
+    }
+  },
+  "include": ["cypress/**/*.ts", "cypress/e2e/specs/products.specs.cy.ts"],
+  "exclude": ["node_modules", "cypress.config.js"]
+}
